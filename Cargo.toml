@@ -1,0 +1,13 @@
+[package]
+name = "globalip-memo"
+version = "0.1.0"
+authors = ["Junki Ishida <jishida.dev@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0.94", features = ["derive"] }
+serde_json = "1.0.40"
+log = "0.4.6"
+env_logger = "0.6.2"
+reqwest = { git = "https://github.com/jishida/reqwest", branch = "dns-extension" }
+regex = "1.1.9"
