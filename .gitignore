@@ -2,3 +2,6 @@
 **/*.rs.bk
 .vscode/
 .test/
+
+globalip.txt
+globalip-memo.log

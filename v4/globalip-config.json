@@ -1,0 +1,22 @@
+{
+    "methods": [
+        {
+            "type": "plain",
+            "url": "https://ifconfig.io/ip"
+        },
+        {
+            "type": "plain",
+            "url": "https://ifconfig.co/ip"
+        },
+        {
+            "type": "plain",
+            "url": "https://ifconfig.me/ip"
+        },
+        {
+            "type": "json",
+            "url": "https://httpbin.org/ip",
+            "regex": "^(?P<ip>[0-9]+.[0-9]+.[0-9]+.[0-9]+)",
+            "path": "origin"
+        }
+    ]
+}

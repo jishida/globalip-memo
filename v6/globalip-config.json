@@ -1,0 +1,13 @@
+{
+    "ip_version": "ipv6",
+    "methods": [
+        {
+            "type": "plain",
+            "url": "https://ifconfig.io/ip"
+        },
+        {
+            "type": "plain",
+            "url": "https://ifconfig.co/ip"
+        }
+    ]
+}

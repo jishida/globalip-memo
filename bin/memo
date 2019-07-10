@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+MEMO_HOME="$(cd "$(dirname "$0")/.."&&pwd)"
+
+memo() {
+  cd "$MEMO_HOME/$1"
+
+  export GLOBALIP_MEMO_HOME="$(pwd)"
+  export GLOBALIP_MEMO_LOG=info
+
+  globalip-memo 2>> globalip-memo.log && echo success $1 || ehco failure $1
+}
+
+case "$@" in
+  '')
+    memo v4
+    memo v6
+    ;;
+  v4)
+    memo v4
+    ;;
+  v6)
+    memo v6
+    ;;
+esac
